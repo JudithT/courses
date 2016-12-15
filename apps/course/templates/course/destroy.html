@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Are you sure you want to delete the following course?</h2>
+      {% for i in courses %}
+    <h2>Name:</h2>{{i.course_name}}</br>
+      <h2>description:</h2>{{i.description}}</br>
+
+    <a href="/">NO</a></br>
+    <a href="/destroy/{{i.id}}/delete">Yes! I want to delete This!</a>
+
+    {%endfor%}
+
+  </body>
+</html>
